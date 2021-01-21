@@ -7,7 +7,7 @@ Nuestro cliente busca una plataforma para promocionar sus productos de mayoreo.
 Desarrollar una página web que permita a nuestro cliente mostrar el catálogo del que dispone de una manera elegante a sus clientes.
 
 ## Estructura:
--Sider (barra lateral)
+- Sider (barra lateral)
   - Logo
   - Menú
     - Inicio

@@ -1,4 +1,5 @@
 # Gansitos Web
+
 Web para venta de catálogo.
 
 ## Requisitos a cumplir
@@ -7,6 +8,7 @@ Nuestro cliente busca una plataforma para promocionar sus productos de mayoreo.
 Desarrollar una página web que permita a nuestro cliente mostrar el catálogo del que dispone de una manera elegante a sus clientes.
 
 ## Estructura:
+
 - Sider (barra lateral)
   - Logo
   - Menú
@@ -28,6 +30,8 @@ Fin.
 
 ## Elementos a investigar
 
+Elementos clave en la realización de la aplicación web.
+
 - [ ] React.js (Front-end)
 - [ ] Express.js (Back-end)
 - [ ] Mongo DB
@@ -39,6 +43,8 @@ Fin.
 
 ## Herramientas de desarrollo
 
+Herramientas a usar para desarrollar la aplicación web
+
 * Visual Studio Code
 * Git con github
 * Node.js
@@ -48,21 +54,37 @@ Fin.
 
 ## Dependencias y librerias usadas:
 
+Esta sección lista las dependencias necesarias que serán instaladas en el host que alojará la aplicación web.
+
 * React.js
 * Express
 * MongoDB
 
 ## Tareas a programar
 
+Estas son las tareas planteadas a realizar (o TODO's) después de terminar los procesos de diseño y estructuración:
+
 * Adaptar plantilla
-* 
+
+## Flujo de trabajo
+
+En caso de que el desarrollo de la aplicación quede estancado, realizar las tareas listadas en esta sección:
+
+* Estudiar la estructura de la plantilla web
+  * Realizar cambios y pruebas en la plantilla web
+* Investigar elementos que las otras aplicaciones web tienen para agregarlas a la aplicación web a desarrollar
+* Diseñar la infraestructura que permita al cliente realizar cambios a la aplicación para satisfacer sus necesidades
+* Realizar pruebas de tiempos de carga y estabilidad de la aplicación web a desarrollar
+* Realizar comparaciones de diferentes host de alojamiento de aplicaciones web
 
 ## Cambios planeados:
+
 - [ ] Adaptar la plantilla
 
 ## Lista de commits
 
 ### Commit num xxxx:
+
 - Test
 
 ## Páginas de referencia
@@ -94,7 +116,9 @@ Se deberá crear e implementar un cargador de archivos que permita:
 ### Envío de correo electrónico
 
 - [ ] Enviar al menos una notificación vía correo electrónico.
+
 ============================================================
+
 Thanks for downloading this theme!
 
 ## Other Useful Links

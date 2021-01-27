@@ -1,72 +1,72 @@
-.body-contenido {
-    position: relative;
-  }
-  
+.menu-Lateral {
+  background-color: #F8F8F8;
+  min-height: 100vh;
+  padding: 0;
+}
+.menu-Lateral .logo {
+  text-align: center;
+  padding: 10px 15px;
+}
+.menu-Lateral .seccion-menu-lateral {
+  margin-top: 50px;
+}
+.menu-Lateral .contacto {
+  padding: 25px;
+  color: #99896e;
+  margin-top: 20px;
+}
+.menu-Lateral .contacto p {
+  color: #99896e;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.menu-social {
+  margin-top: 100px;
+  text-align: center;
+  padding: 0;
+  list-style: none;
+}
+.menu-social li {
+  display: inline-block;
+}
+.menu-social li a {
+  padding: 7px;
+  font-size: 20px;
+  color: #99896e;
+}
+.menu-social li a:hover {
+  color: #ffffff;
+}
+
+.facebook {
+  background-image: url('../icons/facebook.png');
+}
+
+@media (max-width: 768px) {
   .menu-Lateral {
-    background-color: #F8F8F8;
-    min-height: 100vh;
+    min-height: 100%;
     padding: 0;
-  }
-  .menu-Lateral .logo {
-    text-align: center;
-    padding: 10px 15px;
+    max-width: 250px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 999999;
+    margin-left: -250px;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
   }
   .menu-Lateral .seccion-menu-lateral {
-    margin-top: 50px;
+    position: relative;
   }
-  .menu-Lateral .contacto {
-    padding: 25px;
-    color: #99896e;
-    margin-top: 20px;
+
+  .sidebar_closed .menu-Lateral {
+    margin-left: 0;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
   }
-  .menu-Lateral .contacto p {
-    color: #99896e;
-    font-size: 12px;
-    text-align: center;
-    font-weight: 500;
-  }
-  
-  .menu-social {
-    margin-top: 100px;
-    text-align: center;
-    padding: 0;
-    list-style: none;
-  }
-  .menu-social li {
-    display: inline-block;
-  }
-  .menu-social li a {
-    padding: 7px;
-    font-size: 20px;
-    color: #99896e;
-  }
-  .menu-social li a:hover {
-    color: #ffffff;
-  }
-  
-  @media (max-width: 768px) {
-    .menu-Lateral {
-      min-height: 100%;
-      padding: 0;
-      max-width: 250px;
-      left: 0;
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      overflow-x: hidden;
-      overflow-y: scroll;
-      z-index: 999999;
-      margin-left: -250px;
-      -webkit-transition: all 1s ease-in-out;
-      transition: all 1s ease-in-out;
-    }
-    .menu-Lateral .seccion-menu-lateral {
-      position: relative;
-    }
-  
-    .sidebar_closed .menu-Lateral {
-      margin-left: 0;
-      -webkit-transition: all 1s ease-in-out;
-      transition: all 1s ease-in-out;
-    }
-  }
+}

@@ -12,14 +12,15 @@ Desarrollar una página web que permita a nuestro cliente mostrar el catálogo d
 - Sider (barra lateral)
   - Logo
   - Menú
-    - Inicio
-    - Catálogo
+    - Productos
+    - Ofertas
     - Contacto
+    -Acerca de
   - Redes sociales
-  - Acerca de
+  -Informacion
 - Página principal
   - Carrucel
-  - Catálogo con imágenes de muestra
+  - Catálogo en mosaicos
   - Recomendaciones
     - Fotos
     - Descrición
@@ -79,7 +80,7 @@ En caso de que el desarrollo de la aplicación quede estancado, realizar las tar
 
 ## Cambios planeados:
 
-- [ ] Adaptar la plantilla
+- [x] Adaptar la plantilla
 
 ## Lista de commits
 

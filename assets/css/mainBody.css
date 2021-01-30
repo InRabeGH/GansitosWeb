@@ -1,6 +1,6 @@
 .body-cuerpo {
     background-color: #ffffff;
-    padding: 0px 0px;
+    padding: 15x 15x;
 }
 
 .body-contenido {
@@ -24,10 +24,7 @@
     font-size: 25px;
 }
 
-.barra .cerrar-bar:before {
-    content: 'X';
-    color: #ffffff;
-    font-size: 28px;
+.barra a.cerrar {
     cursor: cell;
     text-align: right;
 }

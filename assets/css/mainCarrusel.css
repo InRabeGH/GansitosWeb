@@ -1,0 +1,136 @@
+#thumbnail-preview-indicators {
+	position: relative;
+	overflow: hidden;
+}
+#thumbnail-preview-indicators .slides .slide-1,
+#thumbnail-preview-indicators .slides .slide-2,
+#thumbnail-preview-indicators .slides .slide-3 {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#thumbnail-preview-indicators,
+#thumbnail-preview-indicators .slides,
+#thumbnail-preview-indicators .slides .slide-1, 
+#thumbnail-preview-indicators .slides .slide-2,
+#thumbnail-preview-indicators .slides .slide-3 {
+  height: 480px;
+}
+#thumbnail-preview-indicators .slides .slide-1 {
+	background-image: url(assets/img/carrusel/diapositiva-1.jpg);
+}
+#thumbnail-preview-indicators .slides .slide-2 {
+	background-image: url(assets/img/carrusel/diapositiva-2.jpg);
+}
+#thumbnail-preview-indicators .slides .slide-3 {
+	background-image: url(assets(img/carrusel/diapositiva-3.jpg);
+}
+#thumbnail-preview-indicators .carousel-inner .item .carousel-caption {
+	top: 20%;
+	bottom: inherit;
+}
+#thumbnail-preview-indicators .carousel-indicators li,
+#thumbnail-preview-indicators .carousel-indicators li.active {
+	position: relative;
+	width: 100px;
+	height: 8px;
+}
+#thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
+	position: absolute;
+	top: 0;
+	width: 100px;
+	display: none;
+	opacity: 0;
+	left: 50%;
+	margin-top: -80px;
+	margin-left: -50px;
+}
+#thumbnail-preview-indicators .carousel-indicators li:hover > .thumbnail,
+#thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail {
+	display: block;
+	opacity: .8;
+}
+#thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail:hover {
+	opacity: 1;
+}
+@media screen and (max-with : 480px) {
+	#thumbnail-preview-indicators .carousel-indicators li,
+	#thumbnail-preview-indicators .carousel-indicators li.active {
+		width: 50px;
+		height: 8px;
+		position: relative;
+	}
+	#thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
+		width: 50px;
+		left: 50%;
+		margin-top: -50px;
+		margin-left: -25px;
+	}
+	
+}
+/* ==================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (min-width: 959px) {
+	#carouselCaptions {
+		position: relative;
+		overflow: hidden;
+	}
+	#carouselCaptions,
+	#carouselCaptions .slides {
+	  height: 480px;
+	}
+	#carouselCaptions .carousel-inner .carousel-item .carousel-caption {
+		top: 20%;
+		bottom: inherit;
+	}
+	#carouselCaptions .thumbnail > img {
+		position:relative;
+		top: -5rem;
+		display:block;
+		width:100%;
+		border: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#carouselCaptions .thumbnail > img:hover,
+	#carouselCaptions .thumbnail > img.active {
+		display: block;
+		opacity: .8;
+	}
+	#carouselCaptions .carousel-indicators li {
+		background-color: rgba(0,0,0,0);
+		border-radius: 10px;
+		border: 1px solid #fff;
+		cursor: pointer;
+		height: 10px;
+		margin: 1px;
+		text-indent: -999px;
+		width: 10px;
+		display: inline-block;
+		position: relative;
+		width: 100px;
+		height: 8px;
+	}
+	#carouselCaptions .carousel-indicators .active {
+		margin: 0;
+		background-color: #fff;
+	}
+	#carouselCaptions .carousel-caption {
+		font-family: inherit;
+		font-weight: 500;
+		line-height: 1.1;
+		color: inherit;
+	}
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}

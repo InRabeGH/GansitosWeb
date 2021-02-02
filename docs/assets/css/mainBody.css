@@ -1,0 +1,46 @@
+.body-cuerpo {
+    background-color: #f7f5e6;
+    padding: 15x 15x;
+}
+
+.body-contenido {
+    position: relative;
+}
+  
+.barra{
+    background: #333a56;
+    color: #e8e8e8;
+    display: block;
+    /*position: static; Deja estatica la barra donde aparece*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: 999;
+    animation-name: movimiento-lateral;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;/*para que vuelva a su posicion inicial */
+}
+   
+.barra a{ 
+    color: rgb(255, 255, 255); 
+    font-weight: bold; 
+    font-size: 25px;
+}
+
+.barra a.cerrar {
+    cursor: cell;
+    text-align: right;
+}
+
+@keyframes movimiento-lateral {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 100px;
+    }
+  }   
+
+  

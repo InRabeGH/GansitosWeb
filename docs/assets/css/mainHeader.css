@@ -1,0 +1,88 @@
+.menu-Lateral {
+  background-color: #e8e8e8;
+  min-height: 100vh;
+  padding: 0;
+}
+.menu-Lateral .seccion-menu-lateral {
+  margin-top: 50px;
+}
+.menu-Lateral .logo {
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.menu-Lateral .seccion-conyred {
+  margin-top: 50px;
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.menu-Lateral .contacto {
+  padding: 25px;
+  color: #52658f;
+  margin-top: 20px;
+}
+.menu-Lateral .contacto p {
+  color: #52658f;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+}
+.menu-Lateral .contacto a {
+  font-size: 12px;
+  vertical-align: middle;
+  margin: 0 0 15px;
+  line-height: 1.5;
+  color: #52658f;
+}
+.menu-Lateral .contacto a:hover {
+  color: #665252;
+  font-size: 30px;
+}
+
+.menu-social {
+  margin-top: 100px;
+  text-align: center;
+  padding: 0;
+  list-style: none;
+}
+.menu-social li {
+  display: inline-block;
+}
+.menu-social li a {
+  padding: 7px;
+  font-size: 25px;
+  color: #52658f;
+}
+.menu-social li a:hover {
+  color: #665252;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .menu-Lateral {
+    min-height: 100%;
+    padding: 0;
+    max-width: 250px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 999999;
+    margin-left: -250px;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .menu-Lateral .seccion-menu-lateral {
+    position: relative;
+  }
+
+  .sidebar_closed .menu-Lateral {
+    margin-left: 0;
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+  }
+}

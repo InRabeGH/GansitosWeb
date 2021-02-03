@@ -1,3 +1,7 @@
+.contenidoPrincipal {
+    padding: 10px 10px;
+}
+
 .caja-categoria {
     position: relative;
     overflow: hidden;
@@ -100,4 +104,8 @@
 .row .no-gutters {
     margin-right: 0;
     margin-left: 0;
+ }
+
+ .alturaPantallaCarrucel {
+    height: 80vh;
  }

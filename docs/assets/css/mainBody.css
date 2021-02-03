@@ -1,10 +1,10 @@
-.body-cuerpo {
-    background-color: #f7f5e6;
-    padding: 15x 15x;
-}
 
 .body-contenido {
     position: relative;
+}
+
+.body-cuerpo {
+    background-color: #f7f5e6;
 }
   
 .barra{
@@ -21,6 +21,7 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;/*para que vuelva a su posicion inicial */
+
 }
    
 .barra a{ 
@@ -29,9 +30,10 @@
     font-size: 25px;
 }
 
-.barra a.cerrar {
-    cursor: cell;
+.barra div.cerrar {
     text-align: right;
+    margin-right: 10px;
+    float: right;
 }
 
 @keyframes movimiento-lateral {

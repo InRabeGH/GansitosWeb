@@ -4,13 +4,30 @@
   padding: 0;
 }
 .menu-Lateral .seccion-menu-lateral {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .menu-Lateral .logo {
   text-align: center;
   padding: 10px 15px;
 }
-
+.menu-Lateral .seccion-menu-lateral ul li.column-estructura a.column-opciones {
+  padding: 0px 0px 0px 15px;
+  color: #52658f;
+  line-height: 1.5;
+  font-weight: normal;
+}
+.menu-Lateral .seccion-menu-lateral ul li.column-estructura a.column-opciones:hover {
+  color: #e8e8e8;
+}
+.menu-Lateral .seccion-menu-lateral ul li.column-estructura{
+  width: 80%;
+}
+.menu-Lateral .seccion-menu-lateral ul li.column-estructura:hover{
+  background-color: #333A56;
+  width: 100%;
+  -webkit-transition: all ease 2s;
+  transition: all ease 2s;
+}
 .menu-Lateral .seccion-conyred {
   margin-top: 50px;
   position: absolute;
@@ -40,7 +57,6 @@
   color: #665252;
   font-size: 30px;
 }
-
 .menu-social {
   margin-top: 100px;
   text-align: center;

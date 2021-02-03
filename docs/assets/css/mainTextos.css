@@ -19,21 +19,15 @@ p {
   line-height: 1.5;
   color: #52658f;
 }
-
 a {
-  color: inherit;
   text-decoration: none;
-  cursor: pointer;
   font-size: 18px;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
 }
 a:hover,
 a:focus,
 a:active {
   text-decoration: none;
   outline: none;
-  color: #333A56;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
@@ -47,4 +41,13 @@ img {
   text-align: center;
   text-shadow: 2px 2px 5px #333A56;
   letter-spacing: 10px;
+  cursor: none;
+}
+.tituloCategoria:hover, .tituloCategoria:active {
+  text-shadow: 4px 4px 10px #8e92a3;
+  letter-spacing: 15px;
+  font-weight: 900;
+  text-align: center;
+  -webkit-transition: all ease-in-out 3s;
+  transition: all ease-in-out 3s;
 }

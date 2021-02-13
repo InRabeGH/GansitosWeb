@@ -1,0 +1,27 @@
+#centrado {
+    text-align: center;
+}
+
+.separacion {
+    margin-bottom: 30px;
+}
+
+.separacionTop {
+    margin-top: 30px;
+}
+
+.no-padding{
+    padding: 0px;
+}
+
+.cursorMamalon {
+    /*cursor: crosshair;*/
+    cursor: cell;
+    /*cursor: url('../icons/enter.cur');*/
+}
+
+.row .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+ }
+

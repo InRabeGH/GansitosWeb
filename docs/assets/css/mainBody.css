@@ -5,6 +5,7 @@
 
 .body-cuerpo {
     background-color: #f7f5e6;
+    padding: 0%;
 }
   
 .barra{
@@ -17,10 +18,6 @@
     top: 0;
     text-align: center;
     z-index: 999;
-    animation-name: movimiento-lateral;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;/*para que vuelva a su posicion inicial */
 
 }
    
@@ -34,15 +31,10 @@
     text-align: right;
     margin-right: 10px;
     float: right;
+} 
+
+@media (max-width: 768px) {
+  .barra{ 
+    display: none;
+  }
 }
-
-@keyframes movimiento-lateral {
-    from {
-        left: 0px;
-    }
-    to {
-        left: 100px;
-    }
-  }   
-
-  

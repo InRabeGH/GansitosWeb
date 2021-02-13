@@ -1,0 +1,74 @@
+.headerSecundario {
+    padding: 10px;
+    background: #333a56;
+}
+
+.headerSecundario a {
+    color: #e8e8e8;
+}
+
+.headerSecundario a.logo {
+    font-size: 30px;
+    padding-left: 15px;
+}
+
+.separacionMosaicoGaleria {
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+    margin: 2.5px 0;
+}
+
+.margenes-raw {
+    margin: 0px;
+    width: 100%;
+    display: flex;
+}
+
+.derecho{
+    text-align: right;
+    float: right;
+}
+
+.deep-footer{
+    bottom: 0;
+    padding: 10px;
+    background: #333a56;
+    text-align: center;
+}
+
+.deep-footer a {
+    color: #e8e8e8;
+}
+
+.deep-footer .btn-inicio-footer{
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.deep-footer .btn-titulo-footer{
+    font-size: 30px;
+    color: #e8e8e8;
+}
+.deep-footer .btn-arriba-footer{
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.menu-social-secundario {
+    margin: 0px;
+}
+.menu-social-secundario li {
+    display: inline-block;
+    padding: 0px;
+}
+.menu-social-secundario li a {
+    padding: 7px;
+    font-size: 30px;
+    color: #e8e8e8;
+    -webkit-transition:all ease-in-out 1.5s;
+    transition: all ease-in-out 1.5s;
+}
+.menu-social-secundario li a:hover {
+    color: #665252;
+    padding: 30px;
+}

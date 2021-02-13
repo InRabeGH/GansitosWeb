@@ -28,8 +28,6 @@ a:focus,
 a:active {
   text-decoration: none;
   outline: none;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
 }
 
 img {
@@ -41,13 +39,12 @@ img {
   text-align: center;
   text-shadow: 2px 2px 5px #333A56;
   letter-spacing: 10px;
-  cursor: none;
+  -webkit-transition:all ease-in-out 3s;
+  transition: all ease-in-out 3s;
 }
-.tituloCategoria:hover, .tituloCategoria:active {
+.tituloCategoria:hover {
   text-shadow: 4px 4px 10px #8e92a3;
   letter-spacing: 15px;
   font-weight: 900;
   text-align: center;
-  -webkit-transition: all ease-in-out 3s;
-  transition: all ease-in-out 3s;
 }

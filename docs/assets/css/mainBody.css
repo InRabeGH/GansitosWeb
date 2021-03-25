@@ -4,13 +4,13 @@
 }
 
 .body-cuerpo {
-    background-color: #f7f5e6;
+    background-color: #ffffff;
     padding: 0%;
 }
   
 .barra{
-    background: #333a56;
-    color: #e8e8e8;
+    background: #FF6732;
+    color: #2A2F3D;
     display: block;
     /*position: static; Deja estatica la barra donde aparece*/
     position: -webkit-sticky;
@@ -22,7 +22,7 @@
 }
    
 .barra a{ 
-    color: rgb(255, 255, 255); 
+    color: #2A2F3D; 
     font-weight: bold; 
     font-size: 25px;
 }

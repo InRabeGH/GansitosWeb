@@ -8,7 +8,7 @@ body {
     line-height: 1.5;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
-    color: #52658f;
+    color: #2A2F3D;
     font-style: normal;
     overflow-x: hidden;
 }
@@ -17,7 +17,7 @@ p {
   font-size: 18px;
   margin: 0 0 15px;
   line-height: 1.5;
-  color: #52658f;
+  color: #2A2F3D;
 }
 a {
   text-decoration: none;
@@ -35,16 +35,18 @@ img {
 }
 
 .tituloCategoria {
+  color:#2A2F3D;
   position: relative;
   text-align: center;
-  text-shadow: 2px 2px 5px #333A56;
-  letter-spacing: 10px;
-  -webkit-transition:all ease-in-out 3s;
-  transition: all ease-in-out 3s;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px #2A2F3D;
+  letter-spacing: 4.5px;
+  -webkit-transition:all ease-in-out 1s;
+  transition: all ease-in-out 1s;
 }
 .tituloCategoria:hover {
-  text-shadow: 4px 4px 10px #8e92a3;
-  letter-spacing: 15px;
-  font-weight: 900;
+  text-shadow: 1px 1px 3px #FF6732;
+  letter-spacing: 5px;
+  font-weight: 600;
   text-align: center;
 }

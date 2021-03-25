@@ -24,12 +24,10 @@
         <link rel="stylesheet" href="assets/css/paginasSecundarias.css">
 
         <!-- Icono de pestana -->
-        <link  rel="icon"   href="assets/icons/mail2.png" type="image/png" />
+        <link rel="shortcut icon" href="assets/icons/x.svg" type="image/ico" />
     </header>
 
     <body>
-        <link media="print" title="El tutorial en PDF" type="application/pdf" rel="alternate" href="http://www.ejemplo.com/tutorial/documento.pdf" />
-        
         <!-- todo -->
         <div class="body-contenido container-fluid">
             <!-- Icono menu responsivo 
@@ -44,33 +42,52 @@
                     <!-- Logoshon-->
                     <div class="logo">
                         <a href="#">
-                            <img src="assets/img/logo.png" alt="Sagita">
+                            <h1 class="tituloCategoria">Catalogo</h1>
                         </a>
                     </div> <!-- Fin Logoshon-->
                     
                     <!-- Menu pricipal lateral -->
                     <div class="seccion-menu-lateral">
                         <ul class="nav flex-column">
-                            <li class="column-estructura">
-                                <a class="dropdown-toggle column-opciones" href="#" id="navbarDropdown" role="button" data-toggle="collapse" data-target="#demo" aria-haspopup="true" aria-expanded="false">
-                                    Productos
-                                </a>
-                                <div id="demo" class="collapse show" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Lentes</a>
-                                    <a class="dropdown-item" href="#">Calzado</a>
-                                    <a class="dropdown-item" href="pages/relojes.html">Relojes</a>
-                                    <a class="dropdown-item" href="#">Carteras</a>
-                                    <a class="dropdown-item" href="#">Bolsas</a>
-                            </li>
-                            <li class="column-estructura">
-                                <a class="cursorMamalon column-opciones" href="#">Ofertas</a>
-                            </li>
-                            <li class="column-estructura">
-                                <a class="cursorMamalon column-opciones" href="#">Contactanos</a>
-                            </li>
-                            <li class="column-estructura">
-                                <a class="cursorMamalon column-opciones" href="#">Acerca de</a>                            
-                            </li>
+                            <ul
+                                class="dropdown-toggle column-estructura1 cursorMamalon "  
+                                id="navbarDropdown" 
+                                data-toggle="collapse" 
+                                data-target="#demo" 
+                                aria-haspopup="true" 
+                                aria-expanded="false"
+                            >
+                                Productos    
+                            </ul>
+
+                            <!-- Funcion de productos -->
+                            <div id="demo" class="collapse show" aria-labelledby="navbarDropdown">
+                                <a class="laterial-column-options" href="#">Lentes</a>
+                                <a class="laterial-column-options" href="#">Calzado</a>
+                                <a class="laterial-column-options" href="pages/relojes.html">Relojes</a>
+                                <a class="laterial-column-options" href="#">Carteras</a>
+                                <a class="laterial-column-options" href="#">Bolsas</a>
+                            </div> <!-- Fin de funcion de productos -->                 
+                            
+                            <a class="column-estructura1 cursorMamalon "  href="#">
+                                Nuevos                         
+                            </a>
+                            <a class="column-estructura1 cursorMamalon "  href="#">
+                                Contactanos                          
+                            </a>
+                            <a class="column-estructura1 cursorMamalon "  href="#">
+                                Acerca de                          
+                            </a>
+                            <a 
+                                class="descarga cursorMamalon" 
+                                href="assets/pdf/prueba.pdf" 
+                                role="button"  
+                                href="assets/pdf/prueba.pdf" 
+                                download="catalogo.pdf" 
+                                target="_blank"
+                            >
+                                Descarga catalogo
+                            </a>
                         </ul>
                     </div> <!-- Fin Menu pricipal lateral -->
 
@@ -124,7 +141,7 @@
                                 <div class="galeriaEncaje justify-content-md-center">
                                     <!-- Carrusel-->
                                     <div id="nuevosProductos" class="tamanoCarrucel cursorMamalon carousel slide carousel-fade" data-ride="carousel">
-                                        <div class="carousel-inner caja-categoria shadow galeriaEncaje__item tamanoCarrucel">
+                                        <div class="carousel-inner caja-categoria shadow galeriaEncaje__item">
                                             <div class="carousel-item active ">
                                                 <img src="assets/img/categorias/B1.jpg" alt="carru1">
                                                 <div class="informacion"> <!-- Conjunto de infomacion visible en el card-->

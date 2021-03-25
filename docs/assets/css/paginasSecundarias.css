@@ -72,3 +72,27 @@
     color: #665252;
     padding: 30px;
 }
+
+.div-menu-social-producto{
+    text-align: center;
+    width: 100%;
+}
+.menu-social-producto {
+    margin: 0px;
+}
+.menu-social-producto li {
+    display: inline-block;
+    padding: 0px;
+}
+.menu-social-producto li a {
+    padding: 50px;
+    font-size: 50px;
+    color: #333a56;
+    -webkit-transition:all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
+}
+.menu-social-producto li a:hover {
+    color: #52658f;
+    text-shadow: 2px 2px 5px #8e92a3;
+    font-size: 51px;
+}

@@ -1,5 +1,5 @@
 .menu-Lateral {
-  background-color: #e8e8e8;
+  background-color: #ffffff;
   min-height: 100vh;
   padding: 0;
 }
@@ -8,28 +8,85 @@
 }
 .menu-Lateral .logo {
   text-align: center;
-  padding: 10px 15px;
-}
-.menu-Lateral .seccion-menu-lateral ul li.column-estructura a.column-opciones {
-  padding: 0px 0px 0px 15px;
-  color: #52658f;
-  line-height: 1.5;
-  font-weight: normal;
-  -webkit-transition:all ease-in-out 3s;
-  transition: all ease-in-out 2s;
-}
-.menu-Lateral .seccion-menu-lateral ul li.column-estructura a.column-opciones:hover {
-  color: #e8e8e8;
+  padding: 30px 10px;
 }
 .menu-Lateral .seccion-menu-lateral ul li.column-estructura{
   width: 80%;
-  -webkit-transition:all ease-in-out 3s;
-  transition: all ease 2s;
+  line-height: 1.8;
+  -webkit-transition:all ease-in-out 1s;
+  transition: all ease 1s;
 }
 .menu-Lateral .seccion-menu-lateral ul li.column-estructura:hover{
-  background-color: #333A56;
+  background-color: #FF6732;
   width: 100%;
 }
+.menu-Lateral .seccion-menu-lateral ul li.column-estructura:active{
+  color: #2A2F3D;
+  background-color: #FFCA00;
+}
+.menu-Lateral .seccion-menu-lateral ul li.column-estructura a.column-opciones {
+  padding: 0px 0px 0px 15px;
+  color: #2A2F3D;
+  line-height: 1.5;
+  font-weight: normal;
+  -webkit-transition:all ease-in-out .5s;
+  transition: all ease-in-out .5s;
+}
+.menu-Lateral .seccion-menu-lateral ul li.column-estructura a.column-opciones:hover {
+  color: #ffffff;
+}
+
+/* Opciones de cuando se desgloza productos */
+
+.laterial-column-options {
+  display: block;
+  width: 100%;
+  padding: .4rem 2.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #2A2F3D;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  -webkit-transition:all ease-in-out 1s;
+  transition: all ease 1s;
+}
+.laterial-column-options:hover{
+  color: #ffffff;
+  background-color: #FF6732;
+}
+.laterial-column-options:active:focus {
+  color: #2A2F3D;
+  background-color: #FFCA00;
+}
+
+/* Fin de opciones de cuando se desgloza productos */
+
+/* Boton de descarga */
+
+.descarga {
+  color: #2A2F3D;
+  text-align: center;
+  padding: 10px;
+  margin: 25px;
+  border: #FF6732;
+  -webkit-transition:all ease-in-out .5s;
+  transition: all ease .5s;
+}
+.descarga:hover{
+  color: #2A2F3D;
+  border: 1.5px solid #FF6732;
+  border-radius: 7px;
+}
+.descarga:active{
+  color: #2A2F3D;
+  border: 2px solid #FFCA00;
+  border-radius: 13px;
+}
+
+/* Fin de boton de descarga */
+
 .menu-Lateral .seccion-conyred {
   margin-top: 50px;
   position: absolute;
@@ -39,11 +96,11 @@
 }
 .menu-Lateral .contacto {
   padding: 25px;
-  color: #52658f;
+  color: #2A2F3D;
   margin-top: 20px;
 }
 .menu-Lateral .contacto p {
-  color: #52658f;
+  color: #2A2F3D;
   font-size: 12px;
   text-align: center;
   font-weight: 500;
@@ -53,12 +110,12 @@
   vertical-align: middle;
   margin: 0 0 15px;
   line-height: 1.5;
-  color: #52658f;
+  color: #2A2F3D;
   -webkit-transition:all ease-in-out 3s;
   transition: all ease-in-out 2s;
 }
 .menu-Lateral .contacto a:hover {
-  color: #665252;
+  color: #FF6732;
   font-size: 30px;
 }
 .menu-social {
@@ -73,12 +130,12 @@
 .menu-social li a {
   padding: 7px;
   font-size: 25px;
-  color: #52658f;
+  color: #2A2F3D;
   -webkit-transition:all ease-in-out 3s;
   transition: all ease-in-out 2s;
 }
 .menu-social li a:hover {
-  color: #665252;
+  color: #FF6732;
   padding: 20px;
 }
 
@@ -107,4 +164,26 @@
     -webkit-transition: all 2s ease-in-out;
     transition: all 2s ease-in-out;
   }
+}
+
+.menu-Lateral .seccion-menu-lateral .column-estructura1{
+  width: 80%;
+  line-height: 1.8;
+  font-size: 18px;
+  padding: .4rem .4rem .4rem 15px;
+  color: #2A2F3D;
+  font-weight: normal;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  -webkit-transition:all ease-in-out 1s;
+  transition: all ease 1s;
+}
+.menu-Lateral .seccion-menu-lateral .column-estructura1:hover{
+  color: #ffffff;
+  background-color: #FF6732;
+  width: 100%;
+}
+.menu-Lateral .seccion-menu-lateral .column-estructura1:active{
+  color: #2A2F3D;
+  background-color: #FFCA00;
 }

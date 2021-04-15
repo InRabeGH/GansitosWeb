@@ -1,7 +1,3 @@
-.contenidoPrincipal {
-    padding: 10px 10px;
-}
-
 .caja-categoria {
     position: relative;
     overflow: hidden;
@@ -87,12 +83,13 @@
     grid-auto-rows: auto;
     grid-gap: 5px;
     grid-auto-flow: row dense;
-    margin-top: 10px;
+    margin: 10px 0px;
 }
 
 @media all and (min-width: 320px) {
     .galeriaEncaje {
         grid-template-columns: repeat(1, 1fr);
+        margin: 0px;
     }
     .carrucelProducto {
         grid-column: span 4;
@@ -113,8 +110,8 @@
 @media all and (min-width: 1024px) {
     .galeriaEncaje {
         grid-template-columns: repeat(3, 1fr);
+        margin: 10px 0px;
     }
-
     .tamanoCarrucel {
         grid-column: span 2;
         grid-row: span 2;
@@ -125,11 +122,10 @@
     }
 }
 
-@media all and (min-width: 1200px){
+@media all and (min-width: 1400px){
     .galeriaEncaje {
         grid-template-columns: repeat(4, 1fr);
     }
-
     .tamanoCarrucel {
         grid-column: span 2;
         grid-row: span 2;
@@ -139,3 +135,36 @@
         grid-row: span 3;
     }
 }
+
+/* Seccionado responsivo para el titulo de cada categoria pantallas chicas */ 
+
+@media all and (max-width: 1199px){
+    .caja-categoria .informacion {
+        top: 50%;
+        height: 50%;
+        padding: 30px 0px;
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+        transition: all ease-in-out 0s;
+        opacity: 1;
+    }
+    .caja-categoria .informacion .texto {
+        transition: all ease-in-out 0s;
+    }
+    .caja-categoria .informacion .texto .texto-interior {
+        vertical-align: bottom;
+    }
+    .caja-categoria .informacion .texto .texto-interior h5 {
+        color: #ffffff;
+        font-size: 30px;
+        opacity: 1;
+        margin-bottom: 0px;
+    }.caja-categoria:hover .informacion .texto-interior h5 {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    .caja-categoria .informacion .texto .texto-interior i {
+        display: none;
+    }
+}
+
+/* Fin de seccionado responsivo para el titulo de cada categoria pantallas chicas */ 

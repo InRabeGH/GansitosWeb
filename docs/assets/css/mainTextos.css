@@ -33,20 +33,3 @@ a:active {
 img {
   max-width: 100%;
 }
-
-.tituloCategoria {
-  color:#2A2F3D;
-  position: relative;
-  text-align: center;
-  font-weight: 600;
-  text-shadow: 1px 1px 3px #2A2F3D;
-  letter-spacing: 4.5px;
-  -webkit-transition:all ease-in-out 1s;
-  transition: all ease-in-out 1s;
-}
-.tituloCategoria:hover {
-  text-shadow: 1px 1px 3px #FF6732;
-  letter-spacing: 5px;
-  font-weight: 600;
-  text-align: center;
-}

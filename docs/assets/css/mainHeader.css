@@ -1,44 +1,127 @@
+
+/* Header responsivo */
+
+.header-resposivo {
+  padding: 10px;
+  background: #ffffff;
+
+  /* navbar */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header-resposivo a {
+  color: #2A2F3D;
+}
+.header-resposivo a.logo {
+  font-size: 35px;
+  padding-left: 15px;
+}
+.header-resposivo .menu-Responsivo {
+  display: block;
+  position: relative;
+  padding: 10px;
+}
+.alternador-menu-responsivo{
+  /* flex-column */
+  flex-direction: column!important;
+
+  /* nav */
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+.alternador-menu-responsivo .estructura-opciones{
+  width: 80%;
+  line-height: 1.8;
+  font-size: 18px;
+  padding: .4rem .4rem .4rem 15px;
+  color: #2A2F3D;
+  font-weight: normal;
+  list-style: none;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.alternador-menu-responsivo .descarga-responsivo {
+  color: #FF6732;
+  text-align: center;
+  padding: 10px;
+  margin: 15px auto;
+  border: 2px solid #FF6732;
+  border-radius: 10px;
+}
+
+/* Fin del header responsivo */
+
 .menu-Lateral {
   background-color: #ffffff;
   min-height: 100vh;
   padding: 0;
+  flex: 0 0 16.666667%; 
+  max-width: 16.666667%;
 }
-.menu-Lateral .seccion-menu-lateral {
-  margin-top: 30px;
-}
-.menu-Lateral .logo {
+
+.logo {
   text-align: center;
   padding: 30px 10px;
 }
-.menu-Lateral .seccion-menu-lateral ul li.column-estructura{
+.logo .tituloCategoria {
+  color:#2A2F3D;
+  position: relative;
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px #2A2F3D;
+  letter-spacing: 4.5px;
+  -webkit-transition:all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}
+.logo .tituloCategoria:hover {
+  text-shadow: 1px 1px 3px #FF6732;
+  letter-spacing: 5px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.seccion-menu-lateral{
+  /* flex-column */
+  flex-direction: column!important;
+
+  /* nav */
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.seccion-menu-lateral .column-estructura{
   width: 80%;
   line-height: 1.8;
+  font-size: 18px;
+  padding: .4rem .4rem .4rem 15px;
+  color: #2A2F3D;
+  font-weight: normal;
+  list-style: none;
+  display: list-item;
+  text-align: -webkit-match-parent;
   -webkit-transition:all ease-in-out 1s;
   transition: all ease 1s;
 }
-.menu-Lateral .seccion-menu-lateral ul li.column-estructura:hover{
+.seccion-menu-lateral .column-estructura:hover{
+  color: #ffffff;
   background-color: #FF6732;
   width: 100%;
 }
-.menu-Lateral .seccion-menu-lateral ul li.column-estructura:active{
+.seccion-menu-lateral .column-estructura:active{
   color: #2A2F3D;
   background-color: #FFCA00;
-}
-.menu-Lateral .seccion-menu-lateral ul li.column-estructura a.column-opciones {
-  padding: 0px 0px 0px 15px;
-  color: #2A2F3D;
-  line-height: 1.5;
-  font-weight: normal;
-  -webkit-transition:all ease-in-out .5s;
-  transition: all ease-in-out .5s;
-}
-.menu-Lateral .seccion-menu-lateral ul li.column-estructura a.column-opciones:hover {
-  color: #ffffff;
 }
 
 /* Opciones de cuando se desgloza productos */
 
-.laterial-column-options {
+.lateral-column-options {
   display: block;
   width: 100%;
   padding: .4rem 2.5rem;
@@ -52,11 +135,11 @@
   -webkit-transition:all ease-in-out 1s;
   transition: all ease 1s;
 }
-.laterial-column-options:hover{
+.lateral-column-options:hover{
   color: #ffffff;
   background-color: #FF6732;
 }
-.laterial-column-options:active:focus {
+.lateral-column-options:active:focus {
   color: #2A2F3D;
   background-color: #FFCA00;
 }
@@ -69,121 +152,159 @@
   color: #2A2F3D;
   text-align: center;
   padding: 10px;
-  margin: 25px;
-  border: #FF6732;
+  margin: 25px auto;
+  border: 1.5px solid #FF6732;
+  border-radius: 10px;
   -webkit-transition:all ease-in-out .5s;
   transition: all ease .5s;
 }
 .descarga:hover{
   color: #2A2F3D;
-  border: 1.5px solid #FF6732;
-  border-radius: 7px;
+  border: 1.5px solid #FFCA00;
 }
 .descarga:active{
-  color: #2A2F3D;
-  border: 2px solid #FFCA00;
-  border-radius: 13px;
+  color: #FFCA00;
 }
 
 /* Fin de boton de descarga */
 
 .menu-Lateral .seccion-conyred {
-  margin-top: 50px;
-  position: absolute;
-  bottom: 0px;
-  margin-bottom: 10px;
+  margin: 10px 0px;
+  position: relative;
   width: 100%;
 }
-.menu-Lateral .contacto {
-  padding: 25px;
-  color: #2A2F3D;
-  margin-top: 20px;
-}
-.menu-Lateral .contacto p {
-  color: #2A2F3D;
-  font-size: 12px;
-  text-align: center;
-  font-weight: 500;
-}
-.menu-Lateral .contacto a {
-  font-size: 12px;
-  vertical-align: middle;
-  margin: 0 0 15px;
-  line-height: 1.5;
-  color: #2A2F3D;
-  -webkit-transition:all ease-in-out 3s;
-  transition: all ease-in-out 2s;
-}
-.menu-Lateral .contacto a:hover {
-  color: #FF6732;
-  font-size: 30px;
-}
 .menu-social {
-  margin-top: 100px;
+  margin: 50px 0px;
   text-align: center;
-  padding: 0;
   list-style: none;
+  padding: 0px;
 }
 .menu-social li {
   display: inline-block;
 }
 .menu-social li a {
   padding: 7px;
-  font-size: 25px;
+  font-size: 27px;
   color: #2A2F3D;
-  -webkit-transition:all ease-in-out 3s;
-  transition: all ease-in-out 2s;
+  -webkit-transition:all ease-in-out 1s;
+  transition: all ease-in-out 1s;
 }
 .menu-social li a:hover {
   color: #FF6732;
   padding: 20px;
 }
+.menu-social li a:active {
+  color: #FFCA00;
+}
 
-@media (max-width: 768px) {
+/* Footer */
+
+.footer{
+  bottom: 0;
+  padding: 10px;
+  background: #ffffff;
+  text-align: center;
+}
+.footer .titulo {
+  font-size: 40px;
+  margin: 10px 0px;
+  color: #2A2F3D;
+}
+.footer .menu-social{
+  margin: 10px 0px;
+  text-align: center;
+  list-style: none;
+  padding: 0px;
+}
+.footer .menu-social li {
+  display: inline-block;
+}
+.footer .menu-social li a {
+  padding: 7px;
+  font-size: 27px;
+  color: #2A2F3D;
+  -webkit-transition:all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}
+.footer .menu-social li a:hover {
+  color: #FF6732;
+  padding: 20px;
+}
+.footer .menu-social li a:active {
+  color: #FFCA00;
+}
+.footer .contacto {
+  padding: 10px 0px;
+  color: #2A2F3D;
+}
+.footer .contacto a {
+  font-size: 11px;
+  vertical-align: middle;
+  line-height: 1.5;
+  color: #2A2F3D;
+  -webkit-transition:all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}.footer .contacto a:hover {
+  color: #FF6732;
+  font-size: 20px;
+}.footer .contacto a:active {
+  color: #FFCA00;
+  font-size: 20px;
+}
+.footer .contacto p {
+  color: #2A2F3D;
+  font-size: 11px;
+  text-align: center;
+  font-weight: 500;
+  margin: 0%;
+}
+
+/* Fin footer */
+
+/* Apartado responsivo */ 
+
+@media all and (max-width: 768px) {
   .menu-Lateral {
-    min-height: 100%;
-    padding: 0;
-    max-width: 250px;
-    left: 0;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    z-index: 999999;
-    margin-left: -250px;
+    display: none;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
   }
-  .menu-Lateral .seccion-menu-lateral {
-    position: relative;
-  }
-
-  .sidebar_closed .menu-Lateral {
-    margin-left: 0;
-    -webkit-transition: all 2s ease-in-out;
-    transition: all 2s ease-in-out;
-  }
 }
 
-.menu-Lateral .seccion-menu-lateral .column-estructura1{
-  width: 80%;
-  line-height: 1.8;
-  font-size: 18px;
-  padding: .4rem .4rem .4rem 15px;
-  color: #2A2F3D;
-  font-weight: normal;
-  display: list-item;
-  text-align: -webkit-match-parent;
-  -webkit-transition:all ease-in-out 1s;
-  transition: all ease 1s;
+@media all and (max-width: 1023px) and (min-width: 768px) {
+  .menu-Lateral {
+    display: none;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
 }
-.menu-Lateral .seccion-menu-lateral .column-estructura1:hover{
-  color: #ffffff;
-  background-color: #FF6732;
-  width: 100%;
+
+@media all and (max-width: 1199px) and (min-width: 1024px) {
+  .menu-Lateral {
+    display: none;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
 }
-.menu-Lateral .seccion-menu-lateral .column-estructura1:active{
-  color: #2A2F3D;
-  background-color: #FFCA00;
+@media all and (max-width: 1450px) and (min-width: 1199px){
+  .header-resposivo{
+    display: none;
+  }
+  
+  .descarga {
+    margin: 25px auto;
+  }
+
+  .menu-social {
+    font-size: 25px;
+  }
+}
+
+@media all and (min-width: 1450px) {
+  .header-resposivo{
+    display: none;
+  }
+  .alternador-menu-responsivo{
+    display: none;
+  }
 }

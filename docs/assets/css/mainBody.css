@@ -1,13 +1,47 @@
-
 .body-contenido {
     position: relative;
+
+    /* Responsive */
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.body-contenido .hileras-justificado {
+    /* Row */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+
+    /* justify-content-center */
+    justify-content: center!important;
 }
 
 .body-cuerpo {
     background-color: #ffffff;
     padding: 0%;
+    align-content: center!important;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
 }
   
+.contenidoPrincipal {
+    padding: 10px;
+}
+.contenidoPrincipal .contenidoFluido {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Barra de promociones */
+
 .barra{
     background: #FF6732;
     color: #2A2F3D;
@@ -15,26 +49,70 @@
     /*position: static; Deja estatica la barra donde aparece*/
     position: -webkit-sticky;
     position: sticky;
+    padding: 0px;
     top: 0;
     text-align: center;
     z-index: 999;
 
-}
-   
+} 
 .barra a{ 
     color: #2A2F3D; 
     font-weight: bold; 
     font-size: 25px;
 }
-
 .barra div.cerrar {
     text-align: right;
     margin-right: 10px;
     float: right;
 } 
 
-@media (max-width: 768px) {
-  .barra{ 
-    display: none;
-  }
+/* Fin de barra de promociones */
+
+/* Apartado responsivo */
+
+@media all and (max-width: 50px) {
+
 }
+
+@media all and (max-width: 320px) {
+  
+}
+
+@media all and (max-width: 768px) {
+    .body-contenido .hileras-justificado {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .body-contenido {
+        padding: 0px;
+    }
+    .body-cuerpo {
+        padding: 0px 0px;
+    }
+}
+
+@media all and (max-width: 1024px){
+    .barra{ 
+        display: none;
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .body-cuerpo {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .contenidoPrincipal {
+        padding: 0px;
+    }
+    .contenidoPrincipal .contenidoFluido {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+
+@media all and (max-width: 1450px){
+    
+}
+
+/* Fin de apartado responsivo */

@@ -9,8 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
         <!-- Font awesome icons -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>        
@@ -22,65 +21,59 @@
         <link rel="stylesheet" href="assets/css/mainBody.css">
         <link rel="stylesheet" href="assets/css/herramientas.css">
         <link rel="stylesheet" href="assets/css/paginasSecundarias.css">
+        <link rel="stylesheet" href="assets/css/mainFooter.css">
 
         <!-- Icono de pestana -->
         <link rel="shortcut icon" href="assets/icons/x.svg" type="image/ico" />
     </head>
 
     <body class="body-contenido">
-        <header role="banner">
-            <!-- Boton menu responsivo -->
-            <nav class="header-resposivo">
-                <a class="logo" href="#">Catalogo</a>
-                <div class="mr-auto"></div>
-                <button 
-                    class="navbar-toggler" 
-                    type="button" 
-                    data-toggle="collapse" 
-                    data-target="#menuDesglosable" 
-                    aria-controls="menuDesglosable" 
-                    aria-expanded="false" 
-                    aria-label="Toggle navigation"
-                >
-                    <i class="fas fa-bars tamano-35"></i>
-                </button>
-            </nav><!-- Fin de boton menu responsivo -->
-        </header>
+         <!-- Barra de promociones -->
+         <div class="barra shadow collapse show" id="barraCerrar">
+            Todos los productos que tenemos para ti, <a href="/pages/relojes.html"><strong class="cursorMamalon">dondole click a aqui </strong></a>. 
+            <div class="cerrar">
+                <a data-bs-toggle="collapse" data-bs-target="#barraCerrar"><i class="fas fa-times cursorMamalon"></i></a>
+            </div>
+        </div> <!-- Fin de barra de promociones -->
 
-        <!-- Desglose de menu responsivo -->
-        <div class="menu-Responsivo collapse" id="menuDesglosable">
-            <ul class="alternador-menu-responsivo">
-                <ul
-                    class="dropdown-toggle estructura-opciones cursorMamalon "  
+        
+        <header role="banner">
+            <!-- Menu 1300 resolucion -->
+            <!-- Logeshon 1300-->
+            <div class="logo-1300">
+                <a href="#" class="tituloCategoria cursorMamalon">Catalogo</a>
+            </div> <!-- Fin Logoshon 1300-->
+
+            <nav class="menu-1300">
+                <a class="actual-1300 cursorMamalon"  href="#">
+                    Inicio                         
+                </a>
+
+                <a
+                    class="objetos-nav dropdown-toggle cursorMamalon "  
                     id="navbarDropdown" 
-                    data-toggle="collapse" 
-                    data-target="#submenu" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#submenu" 
+                    aria-haspopup="true" 
+                    aria-expanded="false"
+                    aria-controls="Submenu"
+                    aria-label="Submenu"
                 >
                     Productos    
-                </ul>
-
-                <!-- Submenu de productos -->
-                <div id="submenu" class="collapse show" aria-labelledby="navbarDropdown">
-                    <a class="lateral-column-options" href="#">Lentes</a>
-                    <a class="lateral-column-options" href="#">Calzado</a>
-                    <a class="lateral-column-options" href="pages/relojes.html">Relojes</a>
-                    <a class="lateral-column-options" href="#">Carteras</a>
-                    <a class="lateral-column-options" href="#">Bolsas</a>
-                </div> <!-- Fin de Submenu de productos -->                 
+                </a>             
                 
-                <a class="estructura-opciones cursorMamalon "  href="#">
+                <a class="objetos-nav cursorMamalon "  href="#">
                     Nuevos                         
                 </a>
-                <a class="estructura-opciones cursorMamalon "  href="#">
+                <a class="objetos-nav cursorMamalon "  href="#">
                     Contactanos                          
                 </a>
-                <a class="estructura-opciones cursorMamalon "  href="#">
+                <a class="objetos-nav cursorMamalon "  href="#">
                     Acerca de                          
                 </a>
 
-                <!-- Boton de descarga -->
                 <a 
-                    class="descarga-responsivo cursorMamalon" 
+                    class="descarga-1300 cursorMamalon" 
                     href="assets/pdf/prueba.pdf" 
                     role="button"  
                     href="assets/pdf/prueba.pdf" 
@@ -88,10 +81,118 @@
                     target="_blank"
                     rel=”noreferrer”`
                 >
-                    Descarga catalogo
-                </a> <!-- Fin de boton de descarga -->
-            </ul>
-        </div> <!-- Fin de desglose de menu responsivo -->
+                    <i class="fas fa-download"></i> Catalogo
+                </a> 
+            </nav> <!-- Fin menu 1300 resolucion -->
+
+            <!-- Submenu de productos -->
+            <div id="submenu" class="collapse" aria-labelledby="navbarDropdown">
+                <nav class="nav-contenedora">
+                    <a class="objetos-options" href="#">Lentes</a>
+                    <a class="objetos-options" href="#">Calzado</a>
+                    <a class="objetos-options" href="pages/relojes.html">Relojes</a>
+                    <a class="objetos-options" href="#">Carteras</a>
+                    <a class="objetos-options" href="#">Bolsas</a>
+                </nav>
+            </div> <!-- Fin de Submenu de productos --> 
+
+            <!-- Menu responsivo -->
+            <nav class="header-resposivo">
+                <!-- Boton menu responsivo-->
+                <button 
+                    class="btn fas fa-bars responsivo-5" 
+                    type="button" 
+                    data-bs-toggle="offcanvas" 
+                    data-bs-target="#menuDesglosable" 
+                    aria-controls="menuDesglosable"
+                    aria-label="Menu alternable"
+                ></button> <!-- Fin de boton menu responsivo-->
+                
+                <!-- Titulo -->
+                <a class="logo tituloCategoria cursorMamalon" href="#">Catalogo</a> <!-- Fin de titulo -->
+                
+                <!-- Boton buscar -->
+                <button 
+                    class="btn fas fa-search responsivo-5" 
+                    type="button" 
+                    data-bs-toggle="offcanvas" 
+                    data-bs-target="#menuDesglosable" 
+                    aria-controls="menuDesglosable"
+                    aria-label="Menu alternable"
+                ></button> <!-- Fin de boton buscar -->
+            </nav> <!-- Fin de menu responsivo -->
+
+            <!-- Vista desglosable -->
+            <div 
+                class="offcanvas offcanvas-start" 
+                tabindex="-1" 
+                id="menuDesglosable" 
+                aria-labelledby="menuDesglosableLabel"
+            >   
+                <!-- Header de menu desglosable-->
+                <div class="offcanvas-header align-items-center">
+                    <a class="tituloCategoria cursorMamalon" id="menuDesglosableLabel" href="#">Catalogo</a>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div> <!-- Fin de header de menu desglosable--> 
+
+                <!-- Cuerpo de menu desglosable -->
+                <div class="offcanvas-body p-0">
+                    <!-- Desglose de menu responsivo -->
+                    <div class="menu-Responsivo">
+                        <div class="alternador-menu-responsivo">
+                            <a class="actual cursorMamalon"  href="#">
+                                Inicio                         
+                            </a>
+
+                            <a
+                                class="tamano-22 dropdown-toggle estructura-opciones cursorMamalon "  
+                                id="navbarDropdown" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#submenu" 
+                                aria-haspopup="true" 
+                                aria-expanded="false"
+                                aria-controls="Submenu"
+                                aria-label="Submenu"
+                            >
+                                Productos    
+                            </a>
+
+                            <!-- Submenu de productos -->
+                            <div id="submenu" class="collapse show" aria-labelledby="navbarDropdown">
+                                <a class="lateral-column-options" href="#">Lentes</a>
+                                <a class="lateral-column-options" href="#">Calzado</a>
+                                <a class="lateral-column-options" href="pages/relojes.html">Relojes</a>
+                                <a class="lateral-column-options" href="#">Carteras</a>
+                                <a class="lateral-column-options" href="#">Bolsas</a>
+                            </div> <!-- Fin de Submenu de productos -->                 
+                            
+                            <a class="estructura-opciones cursorMamalon "  href="#">
+                                Nuevos                         
+                            </a>
+                            <a class="estructura-opciones cursorMamalon "  href="#">
+                                Contactanos                          
+                            </a>
+                            <a class="estructura-opciones cursorMamalon "  href="#">
+                                Acerca de                          
+                            </a>
+
+                            <!-- Boton de descarga -->
+                            <a 
+                                class="descarga-responsivo cursorMamalon" 
+                                href="assets/pdf/prueba.pdf" 
+                                role="button"  
+                                href="assets/pdf/prueba.pdf" 
+                                download="catalogo.pdf" 
+                                target="_blank"
+                                rel=”noreferrer”`
+                            >
+                                Descarga catalogo
+                            </a> <!-- Fin de boton de descarga -->
+                        </div>
+                    </div> <!-- Fin de desglose de menu responsivo -->
+                </div> <!-- Fin de cuerpo de menu desglosable -->
+            </div> <!--Fin de Vista desglosable -->
+        </header>
 
         <!-- Contenido global -->
         <div class="hileras-justificado" role="main">
@@ -99,69 +200,64 @@
             <div class="menu-Lateral">
                 <!-- Logeshon-->
                 <div class="logo">
-                    <a href="#" class="tituloCategoria">Catalogo</a>
+                    <a href="#" class="tituloCategoria cursorMamalon">Catalogo</a>
                 </div> <!-- Fin Logoshon-->
                 
                 <!-- Menu pricipal lateral -->
-                <div >
-                    <ul class="seccion-menu-lateral">
-                        <ul
-                            class="dropdown-toggle column-estructura cursorMamalon "  
-                            id="navbarDropdown" 
-                            data-toggle="collapse" 
-                            data-target="#demo" 
-                            aria-haspopup="true" 
-                            aria-expanded="false"
-                        >
-                            Productos    
-                        </ul>
+                <div class="seccion-menu-lateral">
+                    <a class="actual cursorMamalon"  href="#">
+                        Inicio                         
+                    </a>
 
-                        <!-- Submenu de productos -->
-                        <div id="demo" class="collapse show" aria-labelledby="navbarDropdown">
-                            <a class="lateral-column-options" href="#">Lentes</a>
-                            <a class="lateral-column-options" href="#">Calzado</a>
-                            <a class="lateral-column-options" href="pages/relojes.html">Relojes</a>
-                            <a class="lateral-column-options" href="#">Carteras</a>
-                            <a class="lateral-column-options" href="#">Bolsas</a>
-                        </div> <!-- Fin de Submenu de productos -->                 
-                        
-                        <a class="column-estructura cursorMamalon "  href="#">
-                            Nuevos                         
-                        </a>
-                        <a class="column-estructura cursorMamalon "  href="#">
-                            Contactanos                          
-                        </a>
-                        <a class="column-estructura cursorMamalon "  href="#">
-                            Acerca de                          
-                        </a>
+                    <a
+                        class="tamano-22 dropdown-toggle column-estructura cursorMamalon"  
+                        id="navbarDropdown" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#productos" 
+                        aria-haspopup="true" 
+                        aria-expanded="false"
+                        aria-controls="Productos"
+                        aria-label="Productos"
+                    >
+                        Productos    
+                    </a>
 
-                        <!-- Boton de descarga -->
-                        <a 
-                            class="descarga cursorMamalon" 
-                            href="assets/pdf/prueba.pdf" 
-                            role="button"  
-                            href="assets/pdf/prueba.pdf" 
-                            download="catalogo.pdf" 
-                            target="_blank"
-                            rel=”noreferrer”`
-                        >
-                            Descarga catalogo
-                        </a> <!-- Fin de boton de descarga -->
-                    </ul>
-                     
+                    <!-- Submenu de productos -->
+                    <div id="productos" class="collapse show" aria-labelledby="navbarDropdown">
+                        <a class="lateral-column-options" href="#">Lentes</a>
+                        <a class="lateral-column-options" href="#">Calzado</a>
+                        <a class="lateral-column-options" href="pages/relojes.html">Relojes</a>
+                        <a class="lateral-column-options" href="#">Carteras</a>
+                        <a class="lateral-column-options" href="#">Bolsas</a>
+                    </div> <!-- Fin de Submenu de productos -->                 
+                    
+                    <a class="column-estructura cursorMamalon "  href="#">
+                        Nuevos                         
+                    </a>
+                    <a class="column-estructura cursorMamalon "  href="#">
+                        Contactanos                          
+                    </a>
+                    <a class="column-estructura cursorMamalon "  href="#">
+                        Acerca de                          
+                    </a>
+
+                    <!-- Boton de descarga -->
+                    <a 
+                        class="descarga cursorMamalon" 
+                        href="assets/pdf/prueba.pdf" 
+                        role="button"  
+                        href="assets/pdf/prueba.pdf" 
+                        download="catalogo.pdf" 
+                        target="_blank"
+                        rel=”noreferrer”`
+                    >
+                        Descarga catalogo
+                    </a> <!-- Fin de boton de descarga -->
                 </div> <!-- Fin Menu pricipal lateral -->
             </div> <!-- Fin menu lateral-->
 
             <!-- Contenido central -->
             <div class="body-cuerpo">
-                <!-- Barra de promociones -->
-                <div class="barra shadow collapse show" id="barraCerrar">
-                    Todos los productos que tenemos para ti, <a href="/pages/relojes.html"><strong class="cursorMamalon">dondole click a aqui </strong></a>. 
-                    <div class="cerrar">
-                        <a data-toggle="collapse" data-target="#barraCerrar"><i class="fas fa-times cursorMamalon"></i></a>
-                    </div>
-                </div> <!-- Fin de barra de promociones -->
-
                 <div class="contenidoPrincipal">
                     <div class="contenidoFluido">
                         <div class="justify-content-center">
@@ -175,7 +271,7 @@
                                             <div class="informacion"> <!-- Conjunto de infomacion visible en el card-->
                                                 <div class="texto"> <!-- Asignacion de lugar para controlar la informacion-->
                                                     <div class="texto-interior"> <!-- Acomodo de las dos prinicpales informaciones-->
-                                                        <h5>Productos Nuevos</h5> <!-- titulo del modulo o producto-->
+                                                        <h5>Nuevos</h5> <!-- titulo del modulo o producto-->
                                                         <a href="pages\relojes.html"><i class="cursorMamalon bi bi-arrow-right-circle"></i></a><!-- Icono de accedo a el modulo-->
                                                     </div> <!-- Fin de texto inferior -->
                                                 </div> <!-- Fin de texto-->
@@ -186,7 +282,7 @@
                                             <div class="informacion"> <!-- Conjunto de infomacion visible en el card-->
                                                 <div class="texto"> <!-- Asignacion de lugar para controlar la informacion-->
                                                     <div class="texto-interior"> <!-- Acomodo de las dos prinicpales informaciones-->
-                                                        <h5>Productos Nuevos</h5> <!-- titulo del modulo o producto-->
+                                                        <h5>Nuevos</h5> <!-- titulo del modulo o producto-->
                                                         <a href="pages\relojes.html"><i class="cursorMamalon bi bi-arrow-right-circle"></i></a> <!-- Icono de accedo a el modulo-->
                                                     </div> <!-- Fin de texto inferior -->
                                                 </div> <!-- Fin de texto-->
@@ -197,7 +293,7 @@
                                             <div class="informacion"> <!-- Conjunto de infomacion visible en el card-->
                                                 <div class="texto"> <!-- Asignacion de lugar para controlar la informacion-->
                                                     <div class="texto-interior"> <!-- Acomodo de las dos prinicpales informaciones-->
-                                                        <h5>Productos Nuevos</h5> <!-- titulo del modulo o producto-->
+                                                        <h5>Nuevos</h5> <!-- titulo del modulo o producto-->
                                                         <a href="pages\relojes.html"><i class="cursorMamalon bi bi-arrow-right-circle"></i></a> <!-- Icono de accedo a el modulo-->
                                                     </div> <!-- Fin de texto inferior -->
                                                 </div> <!-- Fin de texto-->
@@ -208,7 +304,7 @@
                                             <div class="informacion"> <!-- Conjunto de infomacion visible en el card-->
                                                 <div class="texto"> <!-- Asignacion de lugar para controlar la informacion-->
                                                     <div class="texto-interior"> <!-- Acomodo de las dos prinicpales informaciones-->
-                                                        <h5>Productos Nuevos</h5> <!-- titulo del modulo o producto-->
+                                                        <h5>Nuevos</h5> <!-- titulo del modulo o producto-->
                                                         <a href="pages\relojes.html"><i class="cursorMamalon bi bi-arrow-right-circle"></i></a> <!-- Icono de accedo a el modulo-->
                                                     </div> <!-- Fin de texto inferior -->
                                                 </div> <!-- Fin de texto-->
@@ -219,7 +315,7 @@
                                             <div class="informacion"> <!-- Conjunto de infomacion visible en el card-->
                                                 <div class="texto"> <!-- Asignacion de lugar para controlar la informacion-->
                                                     <div class="texto-interior"> <!-- Acomodo de las dos prinicpales informaciones-->
-                                                        <h5>Productos Nuevos</h5> <!-- titulo del modulo o producto-->
+                                                        <h5>Nuevos</h5> <!-- titulo del modulo o producto-->
                                                         <a href="pages\relojes.html"><i class="cursorMamalon bi bi-arrow-right-circle"></i></a> <!-- Icono de accedo a el modulo-->
                                                     </div> <!-- Fin de texto inferior -->
                                                 </div> <!-- Fin de texto-->
@@ -355,8 +451,12 @@
             </div> <!-- Fin Contenido central -->
         </div> <!-- Fin Contenido global -->
 
+        <!-- Boton flotante -->
+        <button class="boton-flotante cursorMamalon align-items-center" type="button"> </button><!-- Fin de boton flotante -->
+
+        
         <footer class="footer separacionTop" role="contentinfo">
-            <a href="#" class="titulo cursorMamalon">Categorias</a>
+            <a href="#" class="titulo-footer tituloCategoria cursorMamalon">Categorias</a>
             
             <ul class="menu-social">
                 <li>
@@ -386,16 +486,19 @@
                 </p> 
             </div> <!-- Fin de Creditos -->
         </footer> 
-        
-        <!-- Scripts: jQuery, Popper.js, and Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous">
+        </script>
+        
         <!-- Iconos font awesome -->
         <script src="https://kit.fontawesome.com/914f8a12a3.js" crossorigin="anonymous"></script>
 
-        <!-- JS personalizado 
-        <script src="assets/js/mainGrid.js"></script> -->
+        <!-- JS personalizado -->
+        <script src="assets/js/boton-flotante.js"></script> 
     </body>
 </html>

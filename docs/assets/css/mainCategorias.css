@@ -110,7 +110,7 @@
 @media all and (min-width: 1024px) {
     .galeriaEncaje {
         grid-template-columns: repeat(3, 1fr);
-        margin: 10px 0px;
+        margin: 5px 0px;
     }
     .tamanoCarrucel {
         grid-column: span 2;

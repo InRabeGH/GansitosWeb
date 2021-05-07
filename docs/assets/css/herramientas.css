@@ -24,6 +24,9 @@
     margin-right: 0;
     margin-left: 0;
  }
+.tamano-22 {
+    font-size: 22px;
+}
 
 .tamano-25 {
     font-size: 25px;
@@ -31,4 +34,12 @@
 
 .tamano-35 {
     font-size: 35px;
+}
+
+.responsivo-5{
+    font-size: clamp(2rem, 5vw, 3rem); 
+}
+
+img {
+    max-width: 100%;
 }

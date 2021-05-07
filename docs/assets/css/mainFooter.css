@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Nim bol";
+    src: url('../fonts/NimbusSanL-Bol.otf') format("otf");
+    font-display: fallback;
+}
+
+  /* Footer */
+
+.footer{
+    font-family: "Nim bol", sans-serif ;
+    font-size: 15px;
+    bottom: 0;
+    padding: 10px;
+    background: #ffffff;
+    text-align: center;
+  }
+  .footer .titulo-footer {
+    margin: 10px 0px;
+    color: #2A2F3D;
+  }
+  .footer .menu-social{
+    margin: 10px 0px;
+    list-style: none;
+    padding: 0px;
+  }
+  .footer .menu-social li {
+    display: inline-block;
+  }
+  .footer .menu-social li a {
+    padding: 7px;
+    color: #2A2F3D;
+    font-size: 25px;
+    -webkit-transition:all ease-in-out 1s;
+    transition: all ease-in-out 1s;
+  }.footer .menu-social li a:hover {
+    color: #FF6732;
+    padding: 0px 15px;
+  }.footer .menu-social li a:active {
+    color: #FFCA00;
+  }
+  .footer .contacto {
+    padding: 0px;
+    color: #2A2F3D;
+  }
+  .footer .contacto a {
+    color: #2A2F3D;
+    font-size: 12px;
+    -webkit-transition:all ease-in-out 1s;
+    transition: all ease-in-out 1s;
+  }.footer .contacto a:hover {
+    color: #FF6732;
+    font-size: 20px;
+  }.footer .contacto a:active {
+    color: #FFCA00;
+    font-size: 20px;
+  }
+  .footer .contacto p {
+    color: #2A2F3D;
+    font-size: 12px;
+    margin: 0%;
+  }
+  
+  /* Fin footer */
+

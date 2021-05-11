@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="assets/css/herramientas.css">
         <link rel="stylesheet" href="assets/css/paginasSecundarias.css">
         <link rel="stylesheet" href="assets/css/mainFooter.css">
+        <link rel="stylesheet" href="/docs/assets/css/busqueda.css">
 
         <!-- Icono de pestana -->
         <link rel="shortcut icon" href="assets/icons/x.svg" type="image/ico" />
@@ -42,6 +43,12 @@
             <!-- Logeshon 1300-->
             <div class="logo-1300">
                 <a href="#" class="tituloCategoria cursorMamalon">Catalogo</a>
+                <!-- Boton buscar -->
+                <button 
+                    class="btn fas fa-search responsivo-5" 
+                    onclick="openSearch()"
+                    type="button" 
+                ></button> <!-- Fin de boton buscar -->
             </div> <!-- Fin Logoshon 1300-->
 
             <nav class="menu-1300">
@@ -114,13 +121,21 @@
                 <!-- Boton buscar -->
                 <button 
                     class="btn fas fa-search responsivo-5" 
+                    onclick="openSearch()"
                     type="button" 
-                    data-bs-toggle="offcanvas" 
-                    data-bs-target="#menuDesglosable" 
-                    aria-controls="menuDesglosable"
-                    aria-label="Menu alternable"
                 ></button> <!-- Fin de boton buscar -->
             </nav> <!-- Fin de menu responsivo -->
+
+            <!-- Boton de busqueda -->
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="overlay-content">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div> <!-- Fin boton de busqueda -->
 
             <!-- Vista desglosable -->
             <div 
@@ -201,6 +216,12 @@
                 <!-- Logeshon-->
                 <div class="logo">
                     <a href="#" class="tituloCategoria cursorMamalon">Catalogo</a>
+                    <!-- Boton buscar -->
+                    <button 
+                        class="btn fas fa-search responsivo-5" 
+                        onclick="openSearch()"
+                        type="button" 
+                    ></button> <!-- Fin de boton buscar -->
                 </div> <!-- Fin Logoshon-->
                 
                 <!-- Menu pricipal lateral -->
@@ -500,5 +521,6 @@
 
         <!-- JS personalizado -->
         <script src="assets/js/boton-flotante.js"></script> 
+        <script src="assets/js/busqueda-sobrepagina.js"></script>
     </body>
 </html>

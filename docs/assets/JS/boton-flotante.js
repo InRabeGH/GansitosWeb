@@ -15,6 +15,6 @@ if ( $(window).scrollTop() > amountScrolled ) {
 $('button.boton-flotante').click(function() {
     $('html, body').animate({
         scrollTop: 0
-    }, 800);
+    }, 500);
     return false;
 });

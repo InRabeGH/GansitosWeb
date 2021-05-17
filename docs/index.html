@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="assets/css/herramientas.css">
         <link rel="stylesheet" href="assets/css/paginasSecundarias.css">
         <link rel="stylesheet" href="assets/css/mainFooter.css">
+        <link rel="stylesheet" href="/docs/assets/css/busqueda.css">
 
         <!-- Icono de pestana -->
         <link rel="shortcut icon" href="assets/icons/x.svg" type="image/ico" />
@@ -39,10 +40,23 @@
         
         <header role="banner">
             <!-- Menu 1300 resolucion -->
-            <!-- Logeshon 1300-->
-            <div class="logo-1300">
-                <a href="#" class="tituloCategoria cursorMamalon">Catalogo</a>
-            </div> <!-- Fin Logoshon 1300-->
+            <nav class="nav-1300">
+                <!-- Para rellenar espacio -->
+                <button 
+                    class="btn" 
+                    type="button" 
+                ></button>  <!-- Fin para rellenar espacio -->
+
+                <!-- Logeshon 1300-->
+                <a href="#" class="tituloCategoria cursorMamalon">Catalogo</a><!-- Fin Logoshon 1300-->
+
+                <!-- Boton buscar 1300 -->
+                <button 
+                    class="btn fas fa-search responsivo-3" 
+                    onclick="openSearch()"
+                    type="button" 
+                ></button> <!-- Fin de boton buscar 1300 -->
+            </nav>
 
             <nav class="menu-1300">
                 <a class="actual-1300 cursorMamalon"  href="#">
@@ -114,13 +128,39 @@
                 <!-- Boton buscar -->
                 <button 
                     class="btn fas fa-search responsivo-5" 
+                    onclick="openSearch()"
                     type="button" 
-                    data-bs-toggle="offcanvas" 
-                    data-bs-target="#menuDesglosable" 
-                    aria-controls="menuDesglosable"
-                    aria-label="Menu alternable"
                 ></button> <!-- Fin de boton buscar -->
             </nav> <!-- Fin de menu responsivo -->
+
+            <!-- Overlay de busqueda -->
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div id="overlayContent" class="overlay-content">
+                    <input 
+                        type="text" 
+                        placeholder="Buscar..." 
+                        id="buscar" 
+                        name="search" 
+                        onkeyup="filterFunction()" 
+                        autocomplete="off"
+                    >
+                    <!-- Opciones visibles en el buscador -->
+                    <a href="#">Nuevos</a>
+                    <a href="#">Lentes</a>
+                    <a href="#">Calzado</a>
+                    <a href="pages/relojes.html">Relojes</a>
+                    <a href="#">Carteras</a>
+                    <a href="#">Bolsas</a> <!-- Fin de opciones visibles en el buscador -->
+
+                    <!-- Opciones invisibles del buscador -->
+                    <a href="index.html" style="display: none;">Inicio</a>
+                    <a href="#" style="display: none;">Contactanos</a>
+                    <a href="#" style="display: none;">Acerca de</a> <!-- Fin de opciones invisibles del buscador -->
+                </div>
+            </div> <!-- Fin overlay de busqueda -->
+
+
 
             <!-- Vista desglosable -->
             <div 
@@ -202,7 +242,7 @@
                 <div class="logo">
                     <a href="#" class="tituloCategoria cursorMamalon">Catalogo</a>
                 </div> <!-- Fin Logoshon-->
-                
+
                 <!-- Menu pricipal lateral -->
                 <div class="seccion-menu-lateral">
                     <a class="actual cursorMamalon"  href="#">
@@ -452,9 +492,18 @@
         </div> <!-- Fin Contenido global -->
 
         <!-- Boton flotante -->
-        <button class="boton-flotante cursorMamalon align-items-center" type="button"> </button><!-- Fin de boton flotante -->
+        <button 
+            class="boton-flotante cursorMamalon align-items-center" 
+            type="button"
+        > </button><!-- Fin de boton flotante -->
 
-        
+        <!-- Boton buscar flotante -->
+        <button 
+            class="align-items-center boton-buscar-flotante cursorMamalon" 
+            onclick="openSearch()"
+            type="button" 
+        ></button> <!-- Fin de boton buscar -->
+
         <footer class="footer separacionTop" role="contentinfo">
             <a href="#" class="titulo-footer tituloCategoria cursorMamalon">Categorias</a>
             
@@ -499,6 +548,7 @@
         <script src="https://kit.fontawesome.com/914f8a12a3.js" crossorigin="anonymous"></script>
 
         <!-- JS personalizado -->
-        <script src="assets/js/boton-flotante.js"></script> 
+        <script defer src="assets/js/boton-flotante.js"></script> 
+        <script defer src="assets/js/busqueda-sobrepagina.js"></script>
     </body>
 </html>
